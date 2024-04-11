@@ -1,6 +1,7 @@
+
 const pg = require('pg');
 
-const database = new pg.Client('postgres://tjmdgoio:OSkVHDSDkIJmRmbwPnHgljXCHjR44Lfk@kesavan.db.elephantsql.com/tjmdgoio');
+const database = new pg.Client('postgres://jbavkzvb:lYnyL6kV0F6OygujKeduJdBI0d_Q-lji@isabelle.db.elephantsql.com/jbavkzvb');
 
 database.connect((erro) => {
     if (erro) return console.log('Erro na conexão com o DB', erro);
@@ -8,7 +9,6 @@ database.connect((erro) => {
 });
 
 module.exports = database;
-
 
 /*
 
@@ -30,7 +30,6 @@ CREATE TABLE Epis (
 );
 
 Tabela de Histórico de Retiradas e Devoluções
-
 CREATE TABLE Historico_Epis (
     id INT PRIMARY KEY,
     id_funcionario INT,
